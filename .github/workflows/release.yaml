@@ -19,3 +19,5 @@ jobs:
       - run: pnpm install
       - run: pnpm build
       - run: pnpm publish --no-git-checks # ignore to check main branch
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
