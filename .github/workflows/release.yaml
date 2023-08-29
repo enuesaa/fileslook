@@ -5,6 +5,9 @@ on:
     tags:
       - '*'
 
+permissions:
+  contents: write
+
 jobs:
   release:
     runs-on: ubuntu-20.04
@@ -18,6 +21,18 @@ jobs:
           version: 8
       - run: pnpm install
       - run: pnpm build
-      - run: pnpm publish --no-git-checks # ignore to check main branch
+      - run: pnpm publish --access public --no-git-checks # ignore to check main branch
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # see https://zenn.dev/kou_pg_0131/scraps/6571f00ccc599c
+      
+      - run: echo "TAG_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - run: |
+          echo "# fileslook ${TAG_NAME}" > release.md;
+          echo "## Installation" >> release.md;
+          echo "~~~bash" >> release.md;
+          echo "npm install @enuesaa/fileslook"  >> release.md;
+          echo "~~~" >> release.md;
+      - uses: softprops/action-gh-release@v1
+        with:
+          draft: true
+          body_path: release.md
