@@ -4,10 +4,14 @@ import { FiCopy, FiCheck } from 'react-icons/fi'
 import { MouseEventHandler, useState } from 'react'
 
 type Props = JSX.IntrinsicElements['code']
-export const CodeBlock = ({ className, children }: Props) => {
+export const CodeBlock = ({ className, children, ...rest }: Props) => {
   const [clicked, setClicked] = useState<boolean>(false)
   if (typeof children !== 'string') {
     return (<>children</>)
+  }
+  if (typeof className === 'undefined') {
+    // if classname is undefined, we should regards it as inline code like `something`.
+    return <code className={className}>{children}</code>
   }
 
   const {language, filename} = extractMetadata(className ?? '')
