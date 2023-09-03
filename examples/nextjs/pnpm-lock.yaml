@@ -6,17 +6,8 @@ settings:
 
 dependencies:
   '@enuesaa/fileslook':
-    specifier: ^0.1.0
-    version: 0.1.0(@types/react@18.2.20)
-  '@types/node':
-    specifier: 20.5.1
-    version: 20.5.1
-  '@types/react':
-    specifier: 18.2.20
-    version: 18.2.20
-  '@types/react-dom':
-    specifier: 18.2.7
-    version: 18.2.7
+    specifier: file:../../
+    version: file:../..(@types/react@18.2.20)(react@18.2.0)
   mdx:
     specifier: ^0.3.1
     version: 0.3.1
@@ -26,15 +17,26 @@ dependencies:
   next-mdx-remote:
     specifier: 4.2.0
     version: 4.2.0(react-dom@18.2.0)(react@18.2.0)
-  prettier:
-    specifier: ^3.0.2
-    version: 3.0.2
   react:
     specifier: ^18.2.0
     version: 18.2.0
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+
+devDependencies:
+  '@types/node':
+    specifier: 20.5.1
+    version: 20.5.1
+  '@types/react':
+    specifier: 18.2.20
+    version: 18.2.20
+  '@types/react-dom':
+    specifier: 18.2.7
+    version: 18.2.7
+  prettier:
+    specifier: ^3.0.2
+    version: 3.0.2
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -46,20 +48,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
-    dev: false
-
-  /@enuesaa/fileslook@0.1.0(@types/react@18.2.20):
-    resolution: {integrity: sha512-3QcAGKLuQaLkBzI5OVfKh6RPZLlbgFVDhGO2P4Uu3CSmBU65y1ctF3ipy8hSvYMu7QtIHGKIBQEghBFGyAS1xw==}
-    dependencies:
-      prettier: 3.0.2
-      react: 18.2.0
-      react-icons: 4.10.1(react@18.2.0)
-      react-markdown: 8.0.7(@types/react@18.2.20)(react@18.2.0)
-      react-syntax-highlighter: 15.5.0(react@18.2.0)
-      remark-gfm: 3.0.1
-    transitivePeerDependencies:
-      - '@types/react'
-      - supports-color
     dev: false
 
   /@mdx-js/mdx@2.3.0:
@@ -235,17 +223,16 @@ packages:
 
   /@types/node@20.5.1:
     resolution: {integrity: sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==}
-    dev: false
+    dev: true
 
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: false
 
   /@types/react-dom@18.2.7:
     resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
     dependencies:
       '@types/react': 18.2.20
-    dev: false
+    dev: true
 
   /@types/react@18.2.20:
     resolution: {integrity: sha512-WKNtmsLWJM/3D5mG4U84cysVY31ivmyw85dE84fOCk5Hx78wezB/XEjVPWl2JTZ5FkEeaTJf+VgUAUn3PE7Isw==}
@@ -253,11 +240,9 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
       csstype: 3.1.2
-    dev: false
 
   /@types/scheduler@0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
-    dev: false
 
   /@types/unist@2.0.7:
     resolution: {integrity: sha512-cputDpIbFgLUaGQn6Vqg3/YsJwxUwHLO13v3i5ouxT4lat0khip9AEWxtERujXV9wxIB1EyF97BSJFt6vpdI8g==}
@@ -365,7 +350,6 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
-    dev: false
 
   /currently-unhandled@0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}
@@ -1436,7 +1420,7 @@ packages:
     resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: false
+    dev: true
 
   /prismjs@1.27.0:
     resolution: {integrity: sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==}
@@ -1773,7 +1757,7 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
+    dev: true
 
   /unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
@@ -1898,4 +1882,21 @@ packages:
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
+    dev: false
+
+  file:../..(@types/react@18.2.20)(react@18.2.0):
+    resolution: {directory: ../.., type: directory}
+    id: file:../..
+    name: '@enuesaa/fileslook'
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-icons: 4.10.1(react@18.2.0)
+      react-markdown: 8.0.7(@types/react@18.2.20)(react@18.2.0)
+      react-syntax-highlighter: 15.5.0(react@18.2.0)
+      remark-gfm: 3.0.1
+    transitivePeerDependencies:
+      - '@types/react'
+      - supports-color
     dev: false

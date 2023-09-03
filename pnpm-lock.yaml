@@ -31,6 +31,9 @@ devDependencies:
   esbuild:
     specifier: ^0.19.2
     version: 0.19.2
+  prettier:
+    specifier: ^3.0.3
+    version: 3.0.3
   tsx:
     specifier: ^3.12.7
     version: 3.12.7
@@ -1158,6 +1161,12 @@ packages:
       is-decimal: 1.0.4
       is-hexadecimal: 1.0.4
     dev: false
+
+  /prettier@3.0.3:
+    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /prismjs@1.27.0:
     resolution: {integrity: sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==}
