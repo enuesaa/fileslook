@@ -1,7 +1,7 @@
-import { type FileInfo } from '../type'
+import { type Fileinfo } from '../type'
 
 type Props = {
-  files: FileInfo[];
+  files: Fileinfo[];
   onSelect: (selected: string) => void;
 }
 export const Sidebar = ({ files, onSelect }: Props) => {

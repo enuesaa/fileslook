@@ -1,8 +1,4 @@
-import { CodeBlock } from './CodeBlock'
-import { Sidebar } from './Sidebar'
-import { type FileInfo } from '../type'
 import { ReactNode, useState } from 'react'
-import { File } from './File'
 
 type Props = {
   children: ReactNode

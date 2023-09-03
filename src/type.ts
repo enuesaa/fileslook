@@ -1,5 +1,4 @@
-export type FileInfo = {
+export type Fileinfo = {
   path: string;
-  language: string; // see remarkjs ..?
   content: string;
 }
