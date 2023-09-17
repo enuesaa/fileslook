@@ -24,7 +24,9 @@ export const CodeBlock = ({ className, children }: Props) => {
         style={nightOwl}
         customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', borderRadius: '5px'}}
         language={language ?? undefined}
-        children={children} /> {/* this is because children should be string. */}
+      >
+        {children}
+      </SyntaxHighlighter>
     </div>
   )
 }
@@ -59,7 +61,7 @@ const CopyButton = ({ text }: { text: string }) => {
   }
 
   return (
-    <span onClick={handleCopy} style={{position: 'absolute', bottom: '28px', right: '7px', color: '#aaaaaa', fontSize: '16px', cursor: 'pointer'}}>
+    <span onClick={handleCopy} style={{position: 'absolute', bottom: '3px', right: '5px', color: '#aaaaaa', fontSize: '16px', cursor: 'pointer'}}>
       {clicked ? (<FiCheck />): (<FiCopy />)}
     </span>
   )
