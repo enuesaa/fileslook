@@ -59,7 +59,7 @@ const CopyButton = ({ text }: { text: string }) => {
   }
 
   return (
-    <span onClick={handleCopy} style={{position: 'absolute', bottom: '3px', right: '5px', color: '#aaaaaa', fontSize: '16px', cursor: 'pointer'}}>
+    <span onClick={handleCopy} style={{position: 'absolute', bottom: '28px', right: '7px', color: '#aaaaaa', fontSize: '16px', cursor: 'pointer'}}>
       {clicked ? (<FiCheck />): (<FiCopy />)}
     </span>
   )
