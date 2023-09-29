@@ -28,11 +28,14 @@ jobs:
       
       - run: echo "TAG_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - run: |
-          echo "# fileslook ${TAG_NAME}" > release.md;
-          echo "## Installation" >> release.md;
-          echo "~~~bash" >> release.md;
-          echo "npm install @enuesaa/fileslook"  >> release.md;
-          echo "~~~" >> release.md;
+          cat <<'EOF' | envsubst > release.md
+          # fileslook ${TAG_NAME}
+          ## Installation
+          ```bash
+          npm install @enuesaa/fileslook
+          ```
+          EOF
+
       - uses: softprops/action-gh-release@v1
         with:
           draft: true
