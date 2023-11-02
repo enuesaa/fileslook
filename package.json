@@ -21,11 +21,11 @@
     "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.24",
-    "@types/react-syntax-highlighter": "^15.5.7",
-    "esbuild": "^0.19.4",
+    "@types/react": "^18.2.34",
+    "@types/react-syntax-highlighter": "^15.5.9",
+    "esbuild": "^0.19.5",
     "prettier": "^3.0.3",
-    "tsx": "^3.13.0",
+    "tsx": "^3.14.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
