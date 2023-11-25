@@ -6,6 +6,7 @@ export default function Page() {
   return (
     <>
       <Link href={'markdown'} style={{ color: '#fafafa' }}>markdown</Link>
+      <FilesOverview />
       <FilesOverview.Root />
       <FilesOverview.Content />
     </>
