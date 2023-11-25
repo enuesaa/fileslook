@@ -2,6 +2,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nightOwl } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import { FiCopy, FiCheck } from 'react-icons/fi'
 import { MouseEventHandler, useState } from 'react'
+import styles from './CodeBlock.css'
 
 type Props = JSX.IntrinsicElements['code']
 export const CodeBlock = ({ className, children }: Props) => {
@@ -44,7 +45,7 @@ const extractMetadataFromClassName = (className: string): {language: null|string
 
 const FilenameLabel = ({ filename }: { filename: string }) => {
   return (
-    <span style={{position: 'absolute', top: '5px', right: '5px', color: '#aaaaaa', userSelect: 'none'}}>
+    <span className={styles.label}>
       {filename}
     </span>
   )
@@ -61,7 +62,7 @@ const CopyButton = ({ text }: { text: string }) => {
   }
 
   return (
-    <span onClick={handleCopy} style={{position: 'absolute', bottom: '3px', right: '5px', color: '#aaaaaa', fontSize: '16px', cursor: 'pointer'}}>
+    <span onClick={handleCopy} className={styles.copyButton}>
       {clicked ? (<FiCheck />): (<FiCopy />)}
     </span>
   )
