@@ -1,12 +1,17 @@
 import { type Fileinfo } from '../type'
 
-type Props = {
-  files: Fileinfo[]
+const FilesOverviewRoot = () => {
+  return (<div>root</div>)
 }
-export const FilesOverview = ({ files }: Props) => {
-  return (
-    <section style={{ position: 'fixed', zIndex: '100', width: '90%', left: '5%', height: '70vh', background: '#fafafa' }}>
-      aa
-    </section>
-  )
+
+const FilesOverviewContent = () => {
+  return (<div>content</div>)
 }
+
+export const FilesOverview = Object.assign(
+  {},
+  {
+    Root: FilesOverviewRoot,
+    Content: FilesOverviewContent,
+  }
+)

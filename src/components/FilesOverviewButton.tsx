@@ -16,7 +16,7 @@ export const FilesOverviewButton = ({ files }: Props) => {
   return (
     <>
       <button onClick={handleClick}>aa</button>
-      {showOverview ? <FilesOverview files={files} /> : <></>}
+      {showOverview ? <FilesOverview.Content /> : <></>}
     </>
   )
 }
