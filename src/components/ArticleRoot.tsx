@@ -1,3 +1,12 @@
-export const ArticleRoot = () => {
-  return (<article />)
+import { ReactNode } from 'react'
+
+type Props = {
+  children: ReactNode
+}
+export const ArticleRoot = ({ children }: Props) => {
+  return (
+    <article>
+      {children}
+    </article>
+  )
 }
