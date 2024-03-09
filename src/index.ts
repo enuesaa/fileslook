@@ -1,2 +1,2 @@
 export { CodeBlock } from './components/CodeBlock'
-export { FilesOverviewButton } from './components/FilesOverviewButton'
+export { Article } from './components/Article'
