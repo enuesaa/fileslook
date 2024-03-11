@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { Article } from '@enuesaa/fileslook'
+import { Link } from 'react-router-dom'
 
 export default function Page() {
   const markdown= `
@@ -21,7 +21,7 @@ func main() {
 `
   return (
     <>
-      <Link href={'/'} style={{ color: '#fafafa' }}>top</Link>
+      <Link to='/' style={{ color: '#fafafa' }}>top</Link>
       <section style={{width: '900px', margin: '10px auto', color: '#fafafa'}}>
         <Article.Root>
           <Article.Body markdown={markdown} />
