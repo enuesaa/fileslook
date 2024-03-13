@@ -23,9 +23,7 @@ func main() {
     <>
       <Link to='/' style={{ color: '#fafafa' }}>top</Link>
       <section style={{width: '900px', margin: '10px auto', color: '#fafafa'}}>
-        <Article.Root>
-          <Article.Body markdown={markdown} />
-        </Article.Root>
+        <Article markdown={markdown} />
       </section>
     </>
   )
