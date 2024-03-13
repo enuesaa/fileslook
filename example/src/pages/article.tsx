@@ -1,5 +1,6 @@
-import { Article } from '@enuesaa/fileslook'
+import Markdown from 'react-markdown'
 import { Link } from 'react-router-dom'
+import { ArticleCodeSnippet, ArticleFileViewer } from '@enuesaa/fileslook'
 
 export default function Page() {
   const markdown= `
@@ -23,7 +24,8 @@ func main() {
     <>
       <Link to='/' style={{ color: '#fafafa' }}>top</Link>
       <section style={{width: '900px', margin: '10px auto', color: '#fafafa'}}>
-        <Article markdown={markdown} />
+        <Markdown components={{code: ArticleCodeSnippet}}>{markdown}</Markdown>
+        <ArticleFileViewer markdown={markdown} />
       </section>
     </>
   )

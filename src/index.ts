@@ -1,2 +1,3 @@
 export { CodeBlock } from './components/CodeBlock'
-export { Article } from './components/Article'
+export { ArticleCodeSnippet } from './components/ArticleCodeSnippet'
+export { ArticleFileViewer } from './components/ArticleFileViewer'
