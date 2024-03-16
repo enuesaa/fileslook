@@ -1,21 +1,4 @@
-// import { type Plugin } from 'unified'
-// import { type Root } from 'mdast'
 import { remark } from 'remark'
-import { useState } from 'react'
-
-//see https://giraph.me/articles/unified-with-ts/
-// const transform: Plugin<void[], Root, Root> = () => {
-//   return (tree) => {
-//     tree.children.filter(v => v.type === 'code').map(v => {
-//       // console.log(v)
-//     })
-
-//     return {
-//       ...tree,
-//       children: tree.children.filter(v => v.type === 'code'),
-//     }
-//   }
-// }
 
 export type CodeBlock = {
   lang: string
