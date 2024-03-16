@@ -23,9 +23,6 @@ dependencies:
   remark:
     specifier: ^15.0.1
     version: 15.0.1
-  remark-parse:
-    specifier: ^11.0.0
-    version: 11.0.0
   unified:
     specifier: ^11.0.4
     version: 11.0.4

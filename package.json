@@ -12,8 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsx build.ts && tsc",
-    "poc-md-extract-code": "tsx poc-md-extract-code.ts"
+    "build": "tsx build.ts && tsc"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.14.1",
@@ -21,7 +20,6 @@
     "react-markdown": "^9.0.1",
     "react-syntax-highlighter": "^15.5.0",
     "remark": "^15.0.1",
-    "remark-parse": "^11.0.0",
     "unified": "^11.0.4"
   },
   "devDependencies": {

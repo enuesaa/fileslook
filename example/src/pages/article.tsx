@@ -19,12 +19,16 @@ func main() {
   fmt.Println("a")
 }
 ~~~
+a
+~~~js
+export const a = 'b'
+~~~
 `
   return (
     <>
       <Link to='/' style={{ color: '#fafafa' }}>top</Link>
       <section style={{width: '900px', margin: '10px auto', color: '#fafafa'}}>
-        <Markdown components={{code: ArticleCodeSnippet}}>{markdown}</Markdown>
+        {/* <Markdown components={{code: ArticleCodeSnippet}}>{markdown}</Markdown> */}
         <ArticleFileViewer markdown={markdown} />
       </section>
     </>
