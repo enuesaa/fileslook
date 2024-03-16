@@ -12,7 +12,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsx build.ts && tsc"
+    "build": "tsx build.ts && tsc",
+    "story": "storybook dev -p 6006"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.14.1",
@@ -23,11 +24,15 @@
     "unified": "^11.0.4"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
     "@types/react": "^18.2.61",
     "@types/react-syntax-highlighter": "^15.5.11",
     "@vanilla-extract/esbuild-plugin": "^2.3.5",
     "esbuild": "^0.20.1",
     "prettier": "^3.2.5",
+    "storybook": "^8.0.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
