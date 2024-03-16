@@ -1,13 +1,11 @@
-import { remark } from 'remark'
-import unified from 'unified';
-import { type Node } from 'unist'
-import { VFileCompatible } from 'vfile'
+import { unified, type Plugin, type Transformer } from 'unified'
+import remarkParse from 'remark-parse'
 
-const transform: unified.Plugin = () => {
-  return (tree: Node, file: VFileCompatible) => {
+const transform: Plugin = (): Transformer => {
+  return (tree) => {
     return {
       ...tree,
-      //@ts-ignore
+      // @ts-ignore
       children: tree.children.filter(v => v.type === 'code'),
     }
   }
@@ -35,5 +33,5 @@ export const a = 'a'
 ~~~
 `
 
-const a = await remark().use(transform).process(markdown)
+const a = await unified().use(remarkParse).use(transform).process(markdown)
 console.log(a.value)

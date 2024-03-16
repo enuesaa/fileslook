@@ -21,14 +21,12 @@
     "react-markdown": "^9.0.1",
     "react-syntax-highlighter": "^15.5.0",
     "remark": "^15.0.1",
-    "remark-gfm": "^4.0.0",
-    "unified": "^11.0.4",
-    "vfile": "^6.0.1"
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.61",
     "@types/react-syntax-highlighter": "^15.5.11",
-    "@types/unist": "^3.0.2",
     "@vanilla-extract/esbuild-plugin": "^2.3.5",
     "esbuild": "^0.20.1",
     "prettier": "^3.2.5",
