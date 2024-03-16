@@ -37,6 +37,9 @@ devDependencies:
   '@storybook/react-vite':
     specifier: ^8.0.0
     version: 8.0.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.1.4)
+  '@types/mdast':
+    specifier: ^4.0.3
+    version: 4.0.3
   '@types/react':
     specifier: ^18.2.61
     version: 18.2.61
@@ -2870,7 +2873,6 @@ packages:
     resolution: {integrity: sha512-LsjtqsyF+d2/yFOYaN22dHZI1Cpwkrj+g06G8+qtUKlhovPW89YhqSnfKtMbkgmEtYpH2gydRNULd6y8mciAFg==}
     dependencies:
       '@types/unist': 3.0.2
-    dev: false
 
   /@types/mdx@2.0.11:
     resolution: {integrity: sha512-HM5bwOaIQJIQbAYfax35HCKxx7a3KrK3nBtIqJgSOitivTD1y3oW9P3rxY9RkXYPUk7y/AjAohfHKmFpGE79zw==}
