@@ -1,9 +1,9 @@
 import { type Meta, type StoryObj } from '@storybook/react'
-import { ArticleFileViewer } from './ArticleFileViewer'
+import { MdCodeViewer } from './MdCodeViewer'
 
-const meta: Meta<typeof ArticleFileViewer> = {
-  title: 'ArticleFileViewer',
-  component: ArticleFileViewer,
+const meta: Meta<typeof MdCodeViewer> = {
+  title: 'MdCodeViewer',
+  component: MdCodeViewer,
 }
 
 export default meta;
