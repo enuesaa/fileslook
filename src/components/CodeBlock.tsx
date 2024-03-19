@@ -23,7 +23,7 @@ export const CodeBlock = ({ className, children }: Props) => {
       <CopyButton text={children} />
       <SyntaxHighlighter
         style={nightOwl}
-        customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', borderRadius: '5px'}}
+        customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', borderRadius: '5px', margin: '0'}}
         language={language ?? undefined}
       >
         {children}
