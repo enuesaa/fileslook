@@ -16,6 +16,9 @@ func main() {
   fmt.Println("a")
 }
 ~~~
+  
+  
+Inline: \`fmt.Println("aa")\`.
 `
 
   return (

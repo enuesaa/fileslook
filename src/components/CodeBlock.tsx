@@ -12,7 +12,13 @@ export const CodeBlock = ({ className, children }: Props) => {
   }
   // NOTE: inline code does not have className.
   if (typeof className === 'undefined') {
-    return <code className={className}>{children}</code>
+    return (
+      <code style={{display: 'inline'}}>
+        <SyntaxHighlighter style={nightOwl}>
+          {children}          
+        </SyntaxHighlighter>
+      </code>
+    )
   }
 
   const {language, filename} = extractMetadataFromClassName(className)
