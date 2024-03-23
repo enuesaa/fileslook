@@ -12,8 +12,5 @@ export default {
     position: 'absolute',
     bottom: '3px',
     right: '5px',
-    color: '#aaaaaa',
-    fontSize: '16px',
-    cursor: 'pointer',
   }),
 }
