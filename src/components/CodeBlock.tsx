@@ -13,11 +13,9 @@ export const CodeBlock = ({ className, children }: Props) => {
   // NOTE: inline code does not have className.
   if (typeof className === 'undefined') {
     return (
-      <code style={{display: 'inline'}}>
-        <SyntaxHighlighter style={nightOwl}>
-          {children}          
-        </SyntaxHighlighter>
-      </code>
+      <SyntaxHighlighter style={nightOwl} customStyle={{padding: '1.5px 3px', margin: '0', display: 'inline-block', verticalAlign: 'middle', borderRadius: '5px'}}>
+        {children}          
+      </SyntaxHighlighter>
     )
   }
 
