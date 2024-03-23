@@ -13,7 +13,7 @@ export const CodeBlock = ({ className, children }: Props) => {
   // NOTE: inline code does not have className.
   if (typeof className === 'undefined') {
     return (
-      <SyntaxHighlighter style={nightOwl} customStyle={{padding: '1.5px 3px', margin: '0', display: 'inline-block', verticalAlign: 'middle', borderRadius: '5px'}}>
+      <SyntaxHighlighter style={nightOwl} PreTag={'span'} customStyle={{padding: '1.5px 3px', margin: '0', display: 'inline-block', verticalAlign: 'middle', borderRadius: '5px'}}>
         {children}          
       </SyntaxHighlighter>
     )
@@ -29,6 +29,7 @@ export const CodeBlock = ({ className, children }: Props) => {
       </div>
       <SyntaxHighlighter
         style={nightOwl}
+        PreTag={'div'}
         customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', borderRadius: '5px', margin: '0'}}
         language={language ?? undefined}
       >
