@@ -6,7 +6,7 @@ await esbuild.build({
   entryPoints: [
     './src/index.ts',
   ],
-  external: ['react'],
+  external: ['react', 'react-dom', '@radix-ui/react-tabs'],
   plugins: [vanillaExtractPlugin()],
   outdir: './dist',
   format: 'esm',

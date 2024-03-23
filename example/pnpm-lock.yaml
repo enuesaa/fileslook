@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@enuesaa/fileslook':
     specifier: file:..
-    version: file:..(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0)(react@18.2.0)
+    version: file:..(@radix-ui/react-tabs@1.0.4)(react-dom@18.2.0)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -2116,22 +2116,22 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  file:..(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0)(react@18.2.0):
+  file:..(@radix-ui/react-tabs@1.0.4)(react-dom@18.2.0)(react@18.2.0):
     resolution: {directory: .., type: directory}
     id: file:..
     name: '@enuesaa/fileslook'
     peerDependencies:
+      '@radix-ui/react-tabs': ^1.0.4
       react: ^18.2.0
+      react-dom: ^18.2.0
     dependencies:
       '@radix-ui/react-tabs': 1.0.4(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0)(react@18.2.0)
       '@vanilla-extract/css': 1.14.1
       react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
       react-icons: 5.0.1(react@18.2.0)
       react-syntax-highlighter: 15.5.0(react@18.2.0)
       remark: 15.0.1
     transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-      - react-dom
       - supports-color
     dev: false
