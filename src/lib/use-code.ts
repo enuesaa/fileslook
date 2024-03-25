@@ -1,5 +1,6 @@
 import { remark } from 'remark'
 
+// TODO change type name
 export type CodeBlock = {
   lang: string
   filename?: string
