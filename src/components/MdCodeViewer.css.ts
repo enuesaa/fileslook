@@ -12,14 +12,13 @@ globalStyle(`${main} *`, {
 export default {
   main,
   tab: style({
-    border: 'none',
-    padding: '3px 20px',
+    border: 'solid 1px #d6deeb',
+    padding: '10px',
     cursor: 'pointer',
     fontWeight: '400',
     fontSize: '16px',
-    background: '#dfdfdf',
-    color: '#111111',
-    borderRadius: '10px 10px 0 0',
-    margin: '0 1px',
+    background: '#011627',
+    color: '#d6deeb',
+    borderRadius: '5px',
   }),
 }

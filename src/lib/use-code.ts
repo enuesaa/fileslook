@@ -1,14 +1,13 @@
 import { remark } from 'remark'
 
-// TODO change type name
-export type CodeBlock = {
+type Code = {
   lang: string
   filename?: string
   code: string
 }
 
 // parse markdown and extract codes.
-export const useCode = (markdown: string): CodeBlock[] => {
+export const useCode = (markdown: string): Code[] => {
   const parsed = remark.parse(markdown)
   const files = parsed.children.filter(v => v.type === 'code')
   const codeblocks = files.map(v => {
