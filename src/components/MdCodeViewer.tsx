@@ -15,11 +15,20 @@ export const MdCodeViewer = ({ markdown, initOpen }: Props) => {
     <>
       <section className={styles.main}>
         <div>
-          {codeblocks.map((v, i) => (
-            <span key={i} className={styles.tab} onClick={() => setOpenFilename(v.filename)}>
-              {v.filename ?? v.lang}
-            </span>
-          ))}
+          {codeblocks.map((v, i) => {
+            if (v.filename === openFilename) {
+              return (
+                <span key={i} className={styles.tabOpened} onClick={() => setOpenFilename(v.filename)}>
+                  {v.filename ?? v.lang}
+                </span>
+              )
+            }
+            return (
+              <span key={i} className={styles.tab} onClick={() => setOpenFilename(v.filename)}>
+                {v.filename ?? v.lang}
+              </span>
+            )
+          })}
         </div>
         {codeblocks.map((v, i) => (
           <div key={i}>
