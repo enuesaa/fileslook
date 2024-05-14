@@ -2,7 +2,6 @@ import { globalStyle, style } from '@vanilla-extract/css'
 
 const main = style({
   padding: '8px 0',
-  border: 'solid 1px #000',
 })
 
 globalStyle(`${main} *`, {
