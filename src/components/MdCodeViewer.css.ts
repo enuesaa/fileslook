@@ -12,7 +12,8 @@ globalStyle(`${main} *`, {
 export default {
   main,
   tab: style({
-    border: 'solid 1px #d6deeb',
+    margin: '0 0 0 1px',
+    border: 'solid 0.5px rgba(255,255,255,0.2)',
     padding: '10px',
     cursor: 'pointer',
     fontWeight: '400',
@@ -22,7 +23,8 @@ export default {
     borderRadius: '5px',
   }),
   tabOpened: style({
-    border: 'solid 1px #d6deeb',
+    margin: '0 0 0 1px',
+    border: 'solid 0.5px rgba(255,255,255,0.2)',
     padding: '10px',
     cursor: 'pointer',
     fontWeight: '400',

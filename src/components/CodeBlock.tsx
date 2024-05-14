@@ -30,7 +30,7 @@ export const CodeBlock = ({ className, children }: Props) => {
       <SyntaxHighlighter
         style={nightOwl}
         PreTag={'div'}
-        customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', borderRadius: '5px', margin: '0'}}
+        customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', border: 'solid 0.5px rgba(255,255,255,0.2)', borderRadius: '5px', margin: '0'}}
         language={language ?? undefined}
       >
         {children}
