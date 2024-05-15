@@ -9,7 +9,7 @@ type Props = {
 }
 export const MdCodeViewer = ({ markdown, initOpen }: Props) => {
   const codeblocks = useCode(markdown)
-  const [openFilename, setOpenFilename] = useState<string|undefined>(initOpen ?? codeblocks.at(0)?.filename)
+  const [openFilename, setOpenFilename] = useState<string | undefined>(initOpen ?? codeblocks.at(0)?.filename)
 
   return (
     <>
@@ -32,11 +32,7 @@ export const MdCodeViewer = ({ markdown, initOpen }: Props) => {
         </div>
         {codeblocks.map((v, i) => (
           <div key={i}>
-            {v.filename === openFilename && (
-              <CodeBlock className={`language-${v.lang}`}>
-                {v.code}
-              </CodeBlock>
-            )}
+            {v.filename === openFilename && <CodeBlock className={`language-${v.lang}`}>{v.code}</CodeBlock>}
           </div>
         ))}
       </section>

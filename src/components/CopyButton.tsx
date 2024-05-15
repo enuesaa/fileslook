@@ -9,12 +9,14 @@ export const CopyButton = ({ text }: { text: string }) => {
     e.preventDefault()
     await globalThis.navigator.clipboard.writeText(text)
     setClicked(true)
-    setTimeout(() => { setClicked(false) }, 3000)
+    setTimeout(() => {
+      setClicked(false)
+    }, 3000)
   }
 
   return (
     <span onClick={handleCopy} className={styles.main}>
-      {clicked ? (<FiCheck />): (<FiCopy />)}
+      {clicked ? <FiCheck /> : <FiCopy />}
     </span>
   )
 }

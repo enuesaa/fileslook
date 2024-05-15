@@ -13,24 +13,40 @@ export const CodeBlock = ({ className, children }: Props) => {
   // NOTE: inline code does not have className.
   if (typeof className === 'undefined') {
     return (
-      <SyntaxHighlighter style={nightOwl} PreTag={'span'} wrapLongLines customStyle={{padding: '2px 5px', margin: '0', verticalAlign: 'middle', borderRadius: '5px', overflowWrap: 'break-word'}}>
-        {children}          
+      <SyntaxHighlighter
+        style={nightOwl}
+        PreTag={'span'}
+        wrapLongLines
+        customStyle={{
+          padding: '2px 5px',
+          margin: '0',
+          verticalAlign: 'middle',
+          borderRadius: '5px',
+          overflowWrap: 'break-word',
+        }}
+      >
+        {children}
       </SyntaxHighlighter>
     )
   }
 
-  const {language, filename} = extractMetadataFromClassName(className)
+  const { language, filename } = extractMetadataFromClassName(className)
 
   return (
-    <div style={{position: 'relative'}}>
-      {filename && (<FilenameLabel filename={filename} />)}
+    <div style={{ position: 'relative' }}>
+      {filename && <FilenameLabel filename={filename} />}
       <div className={styles.copyButton}>
         <CopyButton text={children} />
       </div>
       <SyntaxHighlighter
         style={nightOwl}
         PreTag={'div'}
-        customStyle={{boxShadow: '0 1px 2px rgba(0,0,0,0.3)', border: 'solid 0.5px rgba(255,255,255,0.2)', borderRadius: '5px', margin: '0'}}
+        customStyle={{
+          boxShadow: '0 1px 2px rgba(0,0,0,0.3)',
+          border: 'solid 0.5px rgba(255,255,255,0.2)',
+          borderRadius: '5px',
+          margin: '0',
+        }}
         language={language ?? undefined}
       >
         {children}
@@ -40,9 +56,5 @@ export const CodeBlock = ({ className, children }: Props) => {
 }
 
 const FilenameLabel = ({ filename }: { filename: string }) => {
-  return (
-    <span className={styles.label}>
-      {filename}
-    </span>
-  )
+  return <span className={styles.label}>{filename}</span>
 }

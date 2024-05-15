@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "build": "vite build && tsc",
-    "story": "storybook dev -p 6006"
+    "story": "storybook dev -p 6006",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.15.1",
@@ -38,5 +39,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^15.0.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "trailingComma": "es5",
+    "endOfLine": "lf"
   }
 }

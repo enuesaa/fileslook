@@ -32,5 +32,5 @@ export default {
     background: 'rgba(1,22,39,1)',
     color: '#d6deeb',
     borderRadius: '5px',
-  })
+  }),
 }

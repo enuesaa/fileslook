@@ -6,7 +6,7 @@ const meta: Meta<typeof CodeBlock> = {
   component: CodeBlock,
 }
 
-export default meta;
+export default meta
 
 type Story = StoryObj<typeof meta>
 export const Primary: Story = {
@@ -21,23 +21,23 @@ import (
 func main() {
   fmt.Println("a")
 }
-`
+`,
   },
 }
 
 export const Inline: Story = {
   args: {
-    children: 'fmt.Println("a")'
+    children: 'fmt.Println("a")',
   },
 }
 
 export const InlineLongText: Story = {
   args: {
-    children: 'This is so very long text. here. hello. long long text here.'
+    children: 'This is so very long text. here. hello. long long text here.',
   },
   decorators: [
     (Story) => (
-      <div style={{width: '300px', padding: '10px', border: 'solid 3px #ff6633'}}>
+      <div style={{ width: '300px', padding: '10px', border: 'solid 3px #ff6633' }}>
         <Story />
       </div>
     ),

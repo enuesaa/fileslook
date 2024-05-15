@@ -6,7 +6,7 @@ const meta: Meta<typeof MdCodeViewer> = {
   component: MdCodeViewer,
 }
 
-export default meta;
+export default meta
 
 type Story = StoryObj<typeof meta>
 export const Primary: Story = {
