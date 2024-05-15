@@ -18,5 +18,8 @@ export default defineConfig({
     rollupOptions: {
       external: ['react', 'react-dom', 'remark'],
     },
+    commonjsOptions: {
+      strictRequires: true,
+    },
   },
 })
