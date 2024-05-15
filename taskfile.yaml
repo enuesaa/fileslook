@@ -1,7 +1,0 @@
-# yaml-language-server: $schema=https://taskfile.dev/schema.json
-version: '3'
-
-tasks:
-  check:
-    desc: start example app
-    cmd: pnpm build && rm -rf example/node_modules && cd example && pnpm install && pnpm dev
