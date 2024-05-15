@@ -26,7 +26,7 @@ export const a = 'b'
   return (
     <>
       <Link to='/' style={{ color: '#fafafa' }}>top</Link>
-      <section style={{width: '900px', margin: '10px auto', color: '#fafafa'}}>
+      <section style={{width: '500px', margin: '10px auto', color: '#fafafa'}}>
         <MdCodeViewer markdown={markdown} />
       </section>
     </>

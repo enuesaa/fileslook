@@ -19,12 +19,14 @@ func main() {
   
   
 Inline: \`fmt.Println("aa")\`.
+
+Inline Long Text: \`This is so very long text. here. hello. long long text here\`.
 `
 
   return (
     <>
       <Link to={'/'} style={{ color: '#fafafa' }}>top</Link>
-      <section style={{width: '900px', margin: '10px auto', color: '#fafafa'}}>
+      <section style={{width: '500px', margin: '10px auto', color: '#fafafa', lineHeight: '1.7'}}>
         {/* @ts-ignore TODO fix type mismatch */}
         <Markdown components={{code: CodeBlock}}>{markdown}</Markdown>
       </section>

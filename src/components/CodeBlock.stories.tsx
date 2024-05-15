@@ -30,3 +30,16 @@ export const Inline: Story = {
     children: 'fmt.Println("a")'
   },
 }
+
+export const InlineLongText: Story = {
+  args: {
+    children: 'This is so very long text. here. hello. long long text here.'
+  },
+  decorators: [
+    (Story) => (
+      <div style={{width: '300px', padding: '10px', border: 'solid 3px #ff6633'}}>
+        <Story />
+      </div>
+    ),
+  ],
+}
