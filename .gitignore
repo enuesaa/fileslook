@@ -21,3 +21,5 @@ yarn-error.log*
 .vscode
 
 *storybook.log
+
+dist2

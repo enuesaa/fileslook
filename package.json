@@ -1,6 +1,6 @@
 {
   "name": "@enuesaa/fileslook",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -12,7 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsx build.ts && tsc",
+    "build": "vite build && tsc",
     "story": "storybook dev -p 6006"
   },
   "dependencies": {
@@ -26,10 +26,8 @@
     "@storybook/react-vite": "^8.1.0",
     "@types/react": "^18.3.2",
     "@types/react-syntax-highlighter": "^15.5.13",
-    "@vanilla-extract/esbuild-plugin": "^2.3.5",
     "@vanilla-extract/vite-plugin": "^4.0.9",
     "@vitejs/plugin-react": "^4.2.1",
-    "esbuild": "^0.20.2",
     "prettier": "^3.2.5",
     "storybook": "^8.1.0",
     "tsx": "^4.10.2",
