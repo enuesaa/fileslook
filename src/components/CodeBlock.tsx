@@ -20,7 +20,6 @@ export const CodeBlock = ({ className, children }: Props) => {
         customStyle={{
           padding: '2px 5px',
           margin: '0',
-          verticalAlign: 'middle',
           borderRadius: '5px',
           overflowWrap: 'break-word',
         }}
