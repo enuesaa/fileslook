@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../../node_modules/@enuesaa/fileslook/dist/style.css'
+import '@enuesaa/fileslook/style.css'
 
 export default function Page() {
   return (
