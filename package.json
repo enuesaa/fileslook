@@ -20,23 +20,23 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
-    "@vanilla-extract/css": "^1.15.1",
+    "@vanilla-extract/css": "^1.15.3",
     "react-icons": "^5.2.1",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.1.0",
-    "@storybook/react": "^8.1.0",
-    "@storybook/react-vite": "^8.1.0",
-    "@types/react": "^18.3.2",
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/react": "^8.1.11",
+    "@storybook/react-vite": "^8.1.11",
+    "@types/react": "^18.3.3",
     "@types/react-syntax-highlighter": "^15.5.13",
-    "@vanilla-extract/vite-plugin": "^4.0.9",
-    "@vitejs/plugin-react": "^4.2.1",
-    "prettier": "^3.2.5",
-    "storybook": "^8.1.0",
-    "tsx": "^4.10.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "@vanilla-extract/vite-plugin": "^4.0.13",
+    "@vitejs/plugin-react": "^4.3.1",
+    "prettier": "^3.3.2",
+    "storybook": "^8.1.11",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
   },
   "peerDependencies": {
     "react": "^18.2.0",
